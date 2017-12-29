@@ -1,11 +1,10 @@
 ﻿using Core.Events;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Core.Services
 {
+    /// <summary>
+    /// 事件分发器接口
+    /// </summary>
     public interface IEventDispatcher
     {
         void Dispatch<TEvent>(TEvent eventToDispatch) where TEvent : IDomainEvent;

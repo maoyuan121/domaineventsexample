@@ -1,14 +1,12 @@
-﻿using Core;
-using Core.Events;
+﻿using Core.Events;
 using Core.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Survey.DomainEventHandler
 {
-    public class EndOfSurveyHandler:IDomainHandler<EndOfSurvey>
+    /// <summary>
+    /// 事件处理器
+    /// </summary>
+    public class EndOfSurveyHandler : IDomainHandler<EndOfSurvey>
     {
         public void Handle(EndOfSurvey args)
         {

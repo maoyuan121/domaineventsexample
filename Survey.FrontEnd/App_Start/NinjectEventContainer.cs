@@ -1,14 +1,12 @@
-﻿using System;
-using System.Web.Http.Dependencies;
-using Ninject;
-using Ninject.Syntax;
-using Core;
-using Core.Events;
-using System.Collections.Generic;
+﻿using Core.Events;
 using Core.Services;
+using Ninject;
 
 namespace Survey.FrontEnd.App_Start
 {
+    /// <summary>
+    /// 事件分发器的NInject实现
+    /// </summary>
     public class NinjectEventContainer : IEventDispatcher
     {
         private readonly IKernel _kernel;
